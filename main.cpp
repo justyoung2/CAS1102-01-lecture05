@@ -40,7 +40,7 @@ void decode_steganography(int image_data[], int data_size, std::string key) {
         
         int secret_value = image_data[currentIndex];
 
-        decoded_message += (char)secret_value;
+        decoded_message += secret_value;
 
         keyIndex++;
     }
