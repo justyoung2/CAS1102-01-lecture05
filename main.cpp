@@ -39,8 +39,6 @@ void decode_steganography(int image_data[], int data_size, std::string key) {
         if (currentIndex >= data_size) break;
         
         int secret_value = image_data[currentIndex];
-        
-        if (secret_value == 0) break;
 
         decoded_message += (char)secret_value;
 
